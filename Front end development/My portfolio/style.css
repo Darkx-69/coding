@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg {
+    background-image: url(https://i.pinimg.com/originals/1a/bf/79/1abf798f4b3e40227746ec9daa141af1.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    z-index: 1000;
+    padding-left: 70px;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    width: 100vh;
+    color: #928f8f;
+    margin-bottom: 20px;
+    
+}
+
+.More {
+    z-index: 1000;
+    height: 50px;
+    width: 130px;
+    border-radius: 29px;
+    border-style: solid;
+    border-color: rgb(80, 154, 80);
+    cursor: pointer;
+    background-color: rgb(80, 154, 80);
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    
+
+}
+
+.star {
+    position: absolute;
+    top: -10px;
+    width: 4px;
+    height: 4px;
+    background:whitesmoke;
+    opacity: 0;
+ 
+animation: shoot 3.5s  linear  infinite ;}
+
+
+@keyframes shoot {
+    0%{
+        transform: translateY(-10vh) translateX(-10vh); /* Start just above the viewport */
+        opacity: 0.7; /* Initially invisible */
+    }
+    50%{ opacity: 0.5;}
+
+    80%  {
+        transform: translateY(90vh) translateX(50vh); /* Move slightly below the viewport */
+        opacity: 0.01; /* Fully visible */
+    }
+}
+
+/* Create multiple stars with different positions and delays */
+.star:nth-child(1) { left: 10%; animation-delay: 0s; }
+.star:nth-child(2) { left: 20%; animation-delay: 1s; }
+.star:nth-child(3) { left: 30%; animation-delay: 2s; }
+.star:nth-child(4) { left: 40%; animation-delay: 3s; }
+.star:nth-child(5) { left: 50%; animation-delay: 4s; }
+.star:nth-child(6) { left: 60%; animation-delay: 5s; }
+.star:nth-child(7) { left: 70%; animation-delay: 6s; }
+.star:nth-child(8) { left: 80%; animation-delay: 7s; }
+.star:nth-child(9) { left: 90%; animation-delay: 8s; }

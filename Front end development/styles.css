@@ -1,0 +1,53 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('path/to/your-background-image.jpg') no-repeat center center fixed; /* Add your background image */
+    background-size: cover; /* Cover the entire page with the background image */
+    color: #fff; /* Text color white for contrast */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make the header and graphs section transparent */
+header, #graphs-section {
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #4CAF50; /* Green color for SOLARX */
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.graph-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Ensure the page content remains large in landscape mode */
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+
+    header, #graphs-section {
+        width: 60%;
+    }
+}

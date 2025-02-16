@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panel Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h2>solarX</h2>
+            </div>
+            <ul class="menu">
+                <li>Overview</li>
+                <li>Analysis</li>
+                <li>Energy Balance</li>
+                <li>Report</li>
+                <li>Service Message</li>
+            </ul>
+            <div class="settings">
+                <h4>Settings</h4>
+                <ul>
+                    <li>My Site</li>
+                    <li>My Account</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Performance Monitoring -->
+            <div class="performance-monitoring">
+                <h3>Performance Monitoring</h3>
+                <div class="monitor">
+                    <p>Total Charging: 80.88 kWh</p>
+                    <p>Power Usage: 17.05 kWh</p>
+                    <p>Solar Panel Capacity: 220.0 W</p>
+                </div>
+            </div>
+
+            <!-- Energy Generation -->
+            <div class="energy-generation">
+                <h3>Energy Generation</h3>
+                <div class="chart">
+                    <!-- Here we can use a chart library for the graphs -->
+                    <canvas id="energyChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Energy Production -->
+            <div class="energy-production">
+                <h3>Energy Production</h3>
+                <div class="chart">
+                    <canvas id="productionChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Solar Panels Points -->
+            <div class="solar-panels">
+                <h3>Solar Panels Points</h3>
+                <ul>
+                    <li>ADITYA YADAV spanel - 120.6 kWh</li>
+                    <li>LALLI GUPTA YADAV spanel - 430.8 kWh</li>
+                    <li>lakshya lendi SPanel - 240.7 kWh</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
