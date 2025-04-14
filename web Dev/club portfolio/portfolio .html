@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My Portfolio</title>
+  <meta name="description" content="My personal portfolio website." />
+  <link rel="stylesheet" href="portfolio.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="full">
+  <div class="an">
+    <p onclick="scrollToSection('about')">About</p>
+    <p onclick="scrollToSection('projects')">Projects</p>
+    <p onclick="scrollToSection('contact')">Contact</p>
+    <button id="modeToggle" onclick="toggleDarkMode()">🌙</button>
+  </div>
+
+  <div class="ab">
+  
+  </div>
+
+  <div id="about" class="sec">
+    <div class="profile">
+      <img class="my" src="thumnails/my pic.jpg" alt="My Picture" />
+    </div>
+
+    <div class="profile1">
+      <div class="content">
+        <h1>Discover</h1>
+        <h1>About Me</h1>
+        <div class="text">
+          <p>
+           Hello,I am Umaaditya Singh. I am a passionate Software Developer equipped with good coding and debugging skills. I am currently learning the MERN stack and Android development, and I have gained experience by working on various projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="content1">
+        <h1>Skills</h1>
+        <div class="text">
+          <ol>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Programming Languages: C, C++, JavaScript, and Java</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Teamwork and Collaboration</li>
+            <li>Problem-solving Aptitude</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="projects" class="last">
+    <h1>Projects</h1>
+    <p>To learn HTML and CSS for front-end web development, I made a working clone of YouTube and built this portfolio.</p>
+
+    <div class="projects">
+      <div class="one">
+        <h1>YouTube Clone</h1>
+        <iframe src="https://umaaditya.neocities.org/Youtube" title="YouTube Clone"></iframe>
+      </div>
+      <div class="two">
+        <h1>Portfolio</h1>
+        <iframe src="https://umaaditya.neocities.org/portfolio" title="Portfolio"></iframe>
+      </div>
+    </div>
+
+    <div id="contact" class="contact">
+      <h1>Contact</h1>
+      <p>Phone No: +91-7982037312</p>
+      <p>Email ID: umaaditya7809@gmail.com</p>
+    </div>
+  </div>
+</body>
+</html>
